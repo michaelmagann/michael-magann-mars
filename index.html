@@ -1,134 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mike Magann | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
-  
-  <script src="//use.edgefonts.net/unifrakturcook:n7:all.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <style>
-  @font-face {
-    font-family: 'Google Sans Code';
-    font-style: normal;
-    font-weight: normal;
-    src: url('https://gist.githubusercontent.com/HNazmul-X/8292ed5f1652317ae471da660060361d/raw/google-sans-font-family.css');
-  }
-  </style>
+<nav>
+  <ul>
+    <li><a href="#AboutMe">About</a></li>
+    <li><a href="#Experience">Experience</a></li>
+    <li><a href="#Skills">Skills</a></li>
+    <li><a href="#Projects">Projects</a></li>
+    <li><a href="#Connect">Connect</a></li>
+  </ul>
+</nav>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <style>
-   
-    body {
-      background-color: #FFF9C4; 
-      color: #4B0082;            
-      font-family: 'Google Sans Code', sans-serif; 
-      padding: 0 20px;
-    }
-
-   
-    header {
-      text-align: center;
-      padding: 40px 20px;
-    }
-    header img {
-      width: 100%;
-      max-width: 600px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    }
-    
-    header h1 {
-      font-family: 'UnifrakturCook', serif;
-      margin-top: 20px;
-      font-size: 3em;
-      color: #4B0082;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    }
-    header p {
-      font-size: 1.2em;
-      font-family: 'Google Sans Code', sans-serif;
-    }
-
-   
-    h2 {
-      font-family: 'UnifrakturCook', serif;
-      text-align: center;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-
-#Experience li,
-#Skills li {
-  padding: 12px 0 12px 15px;
-  margin: 12px 0;
-  border-left: 4px solid #4B0082;
-  font-size: 1.05em;
-}
-
-    
-    #Connect ul {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 0;
-      margin-top: 20px;
-    }
-    #Connect a {
-      color: #4B0082;
-      font-size: 2em;
-      transition: color 0.3s, transform 0.3s;
-    }
-    #Connect a:hover {
-      color: #800080;
-      transform: scale(1.2);
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <img src="https://i.imgur.com/4wZRwds.png" alt="Mike Magann">
+<header>
+    <img src="https://mikemagann.tiiny.site/Mike_MagannCORRECT.png" alt="Mike Magann logo"> 
     <h1>Mike Magann</h1>
-    <p>Video Editing | Photography | Graphic Design | Coding</p>
-  </header>
+    <p>Content Creation | Video Editing | Photography | Graphic Design | Coding</p>
+</header>
 
-    <section id="Experience">
+<section id="AboutMe">
+  <h2>About Me</h2>
+  <p> From IEPs to iPhones: A multimedia swiss army knife. 
+    Starting off as a Special Educator to freelance multi media creator with a stop as a stay at home dad in between.  I am able to blend the empathy of an educator, the adaptability of a parent and the skillset of a multimedia and social media Swiss Army Knife. I am always on top of social media trends and ready to create with my iPhone. If the situation calls for it I have a collection of digital and film cameras. I am now expanding my horizons by learning JavaScript, CSS and HTML through Code the Dream. </p>
+</section>
+
+<section id="Experience">
     <h2>Experience</h2>
-    <ul>
-      <li>Freelance Multimedia Creator</li>
-      <li>Intro to Programming at Code the Dream</li>
-      <li>Communication Studies Degree from Bridgewater State College</li>
-      <li>Special Education Paraprofessional</li>
-       </ul>
-  </section>
+    <div class="job">
+    <div class="job-header">
+      <span class="job-title">Freelance Multimedia Creator</span>
+      <span class="job-dates">2020–Present</span>
+    </div>
+    <p class="job-desc">Video, photo, and social media content creation for brands and personal clients.</p>
+  </div>
 
-  <section id="Skills">
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Intro to Programming – Code the Dream</span>
+      <span class="job-dates">2025–Present</span>
+    </div>
+    <p class="job-desc">Learning HTML, CSS, and JavaScript for web development.</p>
+  </div>
+
+<div class="job">
+    <div class="job-header">
+      <span class="job-title">Special Education Paraprofessional & Out of School Program Coordinator</span>
+      <span class="job-dates">2009–2019</span>
+    </div>
+    <p class="job-desc">Supported students with IEPs in inclusive classroom environments. Oversaw out-of-school programs for kids ages 5-18 in a low income at risk community.</p>
+  </div>
+</section>
+
+<section id="Skills">
     <h2>Skills</h2>
     <ul>
       <li>Videography </li> 
       <li>Photography | Digital & Film</li>
-      <li>Video Editing in Adobe Premiere, iMovie, CapCut, InShot, DiVinci Resolve </li>
+      <li>Video Editing in Adobe Premiere, iMovie, CapCut, InShot & DiVinci Resolve </li>
       <li>Photo Editing in Adobe Photoshop & Lightroom</li>
       <li>Graphic Design</li>
       <li>Social Media Management</li>
       <li>Coding (HTML, JavaScript, CSS)</li>
+      <li>Learning animation in Procreate Dreams</li>
     </ul>
-  </section>
+</section>
 
-  <section id="Connect">
-    <h2>Connect with Me</h2>
+<section id="Projects">
+    <h2>Projects</h2>
+    <ul></ul>
+</section>
+
+<section id="Connect">
+  <h2>Connect with Me</h2>
     <ul>
       <li><a href="mailto:michaelmagann@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
       <li><a href="https://www.linkedin.com/in/mike-magann" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
@@ -136,5 +81,5 @@
       <li><a href="https://www.tiktok.com/@oko.mpfour?_r=1&_t=ZP-92sSwR2ZxCY" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
     </ul>
   </section>
-</body>
-</html>
+
+

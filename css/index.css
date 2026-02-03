@@ -1,11 +1,12 @@
+/* mobile (default) */    
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-image: url(https://i.imgur.com/OOhOhqM.jpeg);
+  background-image: url('../images/MMbackground1.jpg');
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   color: #333;
@@ -45,6 +46,11 @@ h2 {
 section {
   margin-bottom: 40px;
 }
+main {
+  max-width: 1100px;   
+  margin: 0 auto;      
+  padding: 0 20px;     
+}
 
 ul {
   list-style-type: none;
@@ -55,7 +61,7 @@ li {
   margin-bottom: 10px;
 }
 
-#Experience li,
+
 #Skills li {
   padding: 12px 0 12px 15px;
   margin: 12px 0;
@@ -96,9 +102,10 @@ li {
 }
 
 #Connect ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  justify-items: center;
   padding: 0;
   margin-top: 20px;
 }
@@ -150,3 +157,45 @@ nav a {
 nav a:hover {
   color: #555555;
 }
+
+/* tablet (768px+) */
+@media (min-width: 768px) {
+ 
+header h1 {
+   font-size: 2.8em;
+   color: #222;   
+ }
+
+ #Skills li {
+   font-size: 1.5em;
+   border-left-color:#444;  
+ }
+
+ .job {
+    padding: 25px;
+    background:rgba(255,255,255,0.6);
+ }
+}
+
+/*desktop (1024px+) */
+
+@media (min-width: 1024px) {
+ 
+header h1 {
+   font-size: 3.4em;
+   letter-spacing: 2px;
+    }
+   
+    #Skills li {
+        padding-left: 25px;
+        font-size: 1.25em;
+    }
+    .job-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #Connect ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+

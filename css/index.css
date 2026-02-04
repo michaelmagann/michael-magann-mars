@@ -5,10 +5,7 @@ html {
 }
 
 body {
-  background-image: url('../images/MMbackground1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: antiquewhite;  
   color: #333;
   margin: 0;
   padding: 0 20px;

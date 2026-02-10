@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: antiquewhite;  
+  background-color: antiquewhite;
   color: #333;
   margin: 0;
   padding: 0 20px;
@@ -17,6 +17,11 @@ header {
   padding: 40px 20px;
 }
 
+header img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+}
 
 header h1 {
   font-family: 'Special Elite', sans-serif;
@@ -53,6 +58,12 @@ li {
   margin-bottom: 10px;
 }
 
+#Skills ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 20px;
+} 
 
 #Skills li {
   padding: 12px 0 12px 15px;
@@ -150,6 +161,24 @@ nav a:hover {
   color: #555555;
 }
 
+footer {
+  text-align: center;
+  padding: 35px 0;
+  margin-top: 60px;
+  border-top: 3px solid rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+}
+
+footer p {
+  margin: 0;
+  font-family: 'Special Elite', sans-serif;
+  font-size: 1.1em;
+  color: black;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  letter-spacing: 1px;
+}
+
 /* tablet (768px+) */
 @media (min-width: 768px) {
  
@@ -157,8 +186,12 @@ header h1 {
    font-size: 2.8em;
    color: #222;   
  }
-
- #Skills li {
+#Skills ul {
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+  }
+ 
+#Skills li {
    font-size: 1.5em;
    border-left-color:#444;  
  }
@@ -177,7 +210,11 @@ header h1 {
    font-size: 3.4em;
    letter-spacing: 2px;
     }
-   
+   # Skills ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
     #Skills li {
         padding-left: 25px;
         font-size: 1.25em;

@@ -31,4 +31,54 @@ for (let i = 0; i < skills.length; i++) {
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
 }
+}
+
+const messageForm = document.querySelector('form[name="leave_message"]');
+
+messageForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+const usersName = event.target.elements.usersName.value;
+const usersEmail = event.target.elements.usersEmail.value;
+const usersMessage = event.target.elements.usersMessage.value;
+
+console.log (usersName, usersEmail, usersMessage);
+
+const messageSection = document.querySelector('#messages');
+const messageList = messageSection.querySelector('ul');
+messageSection.style.display = "block";
+
+const newMessage = document.createElement('li');
+    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a> <span>${usersMessage}</span>`;
+
+const removeButton = document.createElement('button');
+  removeButton.innerText = "remove";
+  removeButton.type = "button";
+
+const editButton = document.createElement('button');
+  editButton.innerText = "edit";
+  editButton.type = "button";
+editButton.addEventListener("click", function() {
+  const currentMessage = newMessage.querySelector("span").innerText;
+  const newText = prompt("Edit your message:", currentMessage);
+  
+    if (newText !== null) {
+        newMessage.querySelector("span").innerText = newText;
+    }
+});
+
+newMessage.appendChild(editButton);
+
+removeButton.addEventListener("click", function () {
+    const entry = removeButton.parentNode;
+    entry.remove();
+if (messageList.children.length === 0) {
+  messageSection.style.display = "none";
+}  
+});
+
+  newMessage.appendChild(removeButton);
+  messageList.appendChild(newMessage);
+
+event.target.reset();
 });

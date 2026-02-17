@@ -179,7 +179,43 @@ footer p {
   letter-spacing: 1px;
 }
 
+form[name="leave_message"] {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px; 
+}
+
+form[name="leave_message"] input,
+form[name="leave_message"] textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form[name="leave_message"] button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+form[name="leave_message"] button:hover {
+  background-color: #333;
+}
 /* tablet (768px+) */
+
 @media (min-width: 768px) {
  
 header h1 {
@@ -200,6 +236,22 @@ header h1 {
     padding: 25px;
     background:rgba(255,255,255,0.6);
  }
+
+form[name="leave_message"] {
+    max-width: 600px;
+    padding: 25px;
+}
+
+form[name="leave_message"] input,
+form[name="leave_message"] textarea {
+    font-size: 17px;  
+    padding: 12px
+}
+form[name="leave_message"] button {
+    font-size: 17px;
+    padding: 14px;
+}
+
 }
 
 /*desktop (1024px+) */
@@ -210,7 +262,7 @@ header h1 {
    font-size: 3.4em;
    letter-spacing: 2px;
     }
-   # Skills ul {
+   #Skills ul {
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
     }
@@ -226,5 +278,18 @@ header h1 {
     #Connect ul {
         grid-template-columns: repeat(4, 1fr);
     }
-}
 
+    form[name="leave_message"] {
+        max-width: 700px;
+        padding: 30px;
+    }
+    form[name="leave_message"] input,
+    form[name="leave_message"] textarea {
+        font-size: 18px;
+        padding: 15px;
+    }
+    form[name="leave_message"] button {
+        font-size: 18px;
+        padding: 16px;
+    }
+}

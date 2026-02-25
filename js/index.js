@@ -30,8 +30,7 @@ for (let i = 0; i < skills.length; i++) {
     const skill = document.createElement("li");
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
-}
-}
+});
 
 const messageForm = document.querySelector('form[name="leave_message"]');
 
@@ -81,4 +80,22 @@ if (messageList.children.length === 0) {
   messageList.appendChild(newMessage);
 
 event.target.reset();
+});
+
+fetch('https://api.github.com/users/michaelmagann/repos')
+    .then(response => response.json())  
+    .then(data => {
+        let repositories = data;
+
+        let projectSection = document.querySelector('#Projects');
+        let projectList = projectSection.querySelector('ul');
+
+        for (let i = 0; i < repositories.length; i++) {
+            let project = document.createElement('li');
+            project.innerHTML = `<a href="${repositories[i].html_url}" target="_blank">${repositories[i].name}</a>`;
+            projectList.appendChild(project);
+        }
+    console.log(repositories);
+})
+.catch(error => console.error('Error fetching repositories:', error));
 });

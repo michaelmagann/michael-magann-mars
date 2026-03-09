@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: rgb(209, 207, 207);
   color: #333;
   margin: 0;
   padding: 0 20px;
@@ -214,6 +214,48 @@ form[name="leave_message"] button {
 form[name="leave_message"] button:hover {
   background-color: #333;
 }
+
+#messages {
+  display: none;
+}
+
+.project-item {
+  flex: 1 1 220px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+#Projects ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#Projects ul li {
+  flex: 1 1 220px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #f9f9f9
+}
+
+#Projects ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  display: block;
+}
+
+#Projects ul li a:hover {
+  color: #555;
+}
+
 /* tablet (768px+) */
 
 @media (min-width: 768px) {
@@ -245,7 +287,7 @@ form[name="leave_message"] {
 form[name="leave_message"] input,
 form[name="leave_message"] textarea {
     font-size: 17px;  
-    padding: 12px
+    padding: 12px;
 }
 form[name="leave_message"] button {
     font-size: 17px;

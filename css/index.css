@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: rgb(209, 207, 207);
   color: #333;
   margin: 0;
   padding: 0 20px;
@@ -219,7 +219,16 @@ form[name="leave_message"] button:hover {
   display: none;
 }
 
-#projects ul{
+.project-item {
+  flex: 1 1 220px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+#Projects ul{
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -228,7 +237,7 @@ form[name="leave_message"] button:hover {
   gap: 12px;
 }
 
-#projects ul li {
+#Projects ul li {
   flex: 1 1 220px;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -236,14 +245,14 @@ form[name="leave_message"] button:hover {
   background: #f9f9f9
 }
 
-#projects ul li a {
+#Projects ul li a {
   text-decoration: none;
   color: black;
   font-weight: 600;
   display: block;
 }
 
-#projects ul li a:hover {
+#Projects ul li a:hover {
   color: #555;
 }
 

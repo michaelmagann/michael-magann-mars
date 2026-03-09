@@ -14,12 +14,12 @@ body.appendChild(footer);
 const skills = [
     "Videography",
     "Photography | Digital & Film",
-    "Video Editing in Adobe Premiere, iMovie, CapCut, InShot & DaVinci Resolve",
+    "Video Editing in Adobe Premiere, iMovie, CapCut & Final Cut Pro",
     "Photo Editing in Adobe Lightroom & Photoshop",
-    "Graphic Design",
     "Content Creation",
+    "Graphic Design",
     "Coding (HTML, CSS & JavaScript)",
-    "Learning animation in Procreate Dreams",
+    
 ];
 
 const skillsSection = document.querySelector("#Skills");
@@ -30,7 +30,7 @@ for (let i = 0; i < skills.length; i++) {
     const skill = document.createElement("li");
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
-});
+}
 
 const messageForm = document.querySelector('form[name="leave_message"]');
 
@@ -92,6 +92,7 @@ fetch('https://api.github.com/users/michaelmagann/repos')
 
         for (let i = 0; i < repositories.length; i++) {
             let project = document.createElement('li');
+            project.classList.add('project-item');
             project.innerHTML = `<a href="${repositories[i].html_url}" target="_blank">${repositories[i].name}</a>`;
             projectList.appendChild(project);
         }
